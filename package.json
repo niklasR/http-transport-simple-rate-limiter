@@ -1,0 +1,71 @@
+{
+  "name": "http-transport-simple-rate-limiter",
+  "version": "1.0.0",
+  "description": "A plugin for http-transport to utilise the simple-rate-limiter that was in use in Flashheart Edit",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niklasR/http-transport-simple-rate-limiter.git"
+  },
+  "keywords": [
+    "flashheart",
+    "blackadder",
+    "rate",
+    "limit",
+    "simple-rate-limit",
+    "http-transport",
+    "http",
+    "http",
+    "client",
+    "rest",
+    "api",
+    "ddos"
+  ],
+  "author": "Nik Rahmel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niklasR/http-transport-simple-rate-limiter/issues"
+  },
+  "homepage": "https://github.com/niklasR/http-transport-simple-rate-limiter#readme",
+  "dependencies": {
+    "simple-rate-limiter": "^0.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true,
+      "mocha": true,
+      "es6": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ],
+      "eqeqeq": 2,
+      "no-var": 2,
+      "one-var": [
+        2,
+        "never"
+      ],
+      "prefer-const": 2,
+      "semi": 2,
+      "strict": [
+        2,
+        "global"
+      ],
+      "arrow-parens": 2,
+      "prefer-arrow-callback": 2
+    }
+  }
+}
