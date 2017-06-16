@@ -4,7 +4,8 @@
   "description": "A plugin for http-transport to utilise the simple-rate-limiter that was in use in Flashheart Edit",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint *.js"
+    "lint": "eslint *.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -34,7 +35,9 @@
     "simple-rate-limiter": "^0.2.3"
   },
   "devDependencies": {
-    "eslint": "^4.0.0"
+    "eslint": "^4.0.0",
+    "mocha": "^3.4.2",
+    "sinon": "^2.3.4"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -61,7 +64,7 @@
       "prefer-const": 2,
       "semi": 2,
       "strict": [
-        2,
+        0,
         "global"
       ],
       "arrow-parens": 2,
