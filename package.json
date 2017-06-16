@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint *.js",
-    "test": "mocha"
+    "test": "mocha",
+    "posttest": "npm run lint",
+    "coverage": "istanbul cover _mocha -- -R dot"
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,7 @@
   },
   "devDependencies": {
     "eslint": "^4.0.0",
+    "istanbul": "^0.4.5",
     "mocha": "^3.4.2",
     "sinon": "^2.3.4"
   },
